@@ -1,0 +1,82 @@
+/* PRO TRADING SECTION */
+.pro-trading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  color: white;
+  overflow: hidden;
+}
+
+.pro-left {
+  width: 45%;
+}
+
+.pro-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pro-left p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.sub-text {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.trade-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #00d09c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* RIGHT SIDE VISUAL */
+.pro-right {
+  width: 50%;
+  position: relative;
+}
+
+/* Desktop screen */
+.screen {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #00d09c, transparent);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Mobile overlay */
+.mobile {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  width: 150px;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(to top, #00d09c, transparent);
+  border: 3px solid #111;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pro-trading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pro-left, .pro-right {
+    width: 100%;
+  }
+
+  .mobile {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
